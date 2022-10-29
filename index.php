@@ -1,4 +1,3 @@
-<?php
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    echo HOLA;
+    <p>hola prueba php</p>
+    <?php echo("hola")?>
 </body>
 </html>
- ?>
