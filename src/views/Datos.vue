@@ -10,13 +10,13 @@ const date = new Date("2023-02-03 12:00")
     <main>
         <div class="containerLogo">
             <div class="center-content">
-                <img class="fiesta" src="../assets/Meslogo ubicacion.png" alt="logo Ubicacion">
+                <img class="fiesta" src="../assets/Meslogo_ubicacion.png" alt="logo Ubicacion">
                 <p class="regaloText">Queremos invitarte a que seas parte de esta gran noche. La ceremonia y la fiesta
                     se realizará en... </p>
                 <button class="botoncito" @click="ubicacion">UBICACION</button>
             </div>
             <div class="center-content">
-                <img class="regalo" src="../assets/logo regalo.png" alt="Caja de Regalo">
+                <img class="regalo" src="../assets/logo_regalo.png" alt="Caja de Regalo">
                 <p class="preMiel">Nuestro mayor regalo es tu presencia pero si deseas colaborar con nuestra</p>
                 <p class="miel">Luna de Miel</p>
                 <p class="preMiel">Pueden hacernos su presente en la siguiente cuenta: <br/> CBU:0000003100001989493977 <br/> Alias:Enzo-Magui</p>
