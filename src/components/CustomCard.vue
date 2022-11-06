@@ -3,7 +3,7 @@
     <img class="ramillete ramilleteTop"  src="../assets/ramillete.png" alt="ramillete.png"/>
   <slot></slot>
   <img class="ramillete" src="../assets/ramillete.png" alt="ramillete.png"/>
-  
+  <router-link class="link" to="/datos"><img src="../assets/expand_more_FILL0_wght400_GRAD0_opsz48.svg"/></router-link>
   </div>
   
 </template>
@@ -26,11 +26,17 @@
   border-radius: 30px;
   position: relative;
   margin-top: 5vh;
-  height: 90vh;
+  height: 85vh;
   min-width: 85vw;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
+}
+
+.link {
+  position: absolute;
+  bottom: 12.5%;
+  z-index: 2;
 }
 </style>

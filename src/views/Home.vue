@@ -1,8 +1,9 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import CustomCard from './components/CustomCard.vue'
-import cuentaRegresiva from './components/CuentaRegresiva.vue'
+import CustomCard from '../components/CustomCard.vue'
+import cuentaRegresiva from '../components/CuentaRegresiva.vue'
+
 const date = new Date("2023-02-03 12:00")
 </script>
 
@@ -10,7 +11,7 @@ const date = new Date("2023-02-03 12:00")
     <main class="main">
         <CustomCard msg="Vite + Vue">
             <p class="header">¡Nos Casamos!</p>
-            <img class="enzoymagui" src="./assets/enzoymagui.png" alt="EnzoYMagui">
+            <img class="enzoymagui" src="../assets/enzoymagui.png" alt="EnzoYMagui">
             <p class="date">3 de febrero 2023</p>
             <cuentaRegresiva :end-date="date" v-slot="{ day, hour, min, sec }">
                 <div class="clock">
@@ -39,17 +40,22 @@ const date = new Date("2023-02-03 12:00")
                         </div>
                     </div>
                 </div>
-                
-
             </cuentaRegresiva>
         </CustomCard>
     </main>
 </template>
 
+<script>
+  export default {
+
+  }
+</script>
+
 <style>
 .header {
     font-size: 20px;
-    margin-bottom: 5vh;
+    margin-top: 12.5vh;
+    margin-bottom: 2.5vh;
 }
 
 .main {
@@ -58,6 +64,7 @@ const date = new Date("2023-02-03 12:00")
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column;
 }
 
 .enzoymagui {
@@ -92,4 +99,5 @@ const date = new Date("2023-02-03 12:00")
 .text p{
     margin:0;
 }
+
 </style>
