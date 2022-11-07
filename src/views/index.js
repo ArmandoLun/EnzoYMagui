@@ -3,8 +3,8 @@ import Datos from './Datos.vue'
 import Home from './Home.vue'
 
 const routes = [
-  { path: '/', component: Home },
-  { path: '/datos', component: Datos },
+  { path: '/', component: Home, meta: { transition: 'bottom-slide' } },
+  { path: '/datos', component: Datos, meta: { transition: 'top-slide' } },
 ]
 
 const router = createRouter({

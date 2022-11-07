@@ -38,5 +38,6 @@
   position: absolute;
   bottom: 12.5%;
   z-index: 2;
+  transform: rotateZ(180deg);
 }
 </style>

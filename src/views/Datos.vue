@@ -22,9 +22,10 @@ const date = new Date("2023-02-03 12:00")
                 <p class="preMiel">Pueden hacernos su presente en la siguiente cuenta: <br/> CBU:0000003100001989493977 <br/> Alias:Enzo-Magui</p>
                 <button class="botoncito" @click="test('0000003100001989493977')" v-clipboard:success="onCopy"
                     v-clipboard:error="onError">COPIAR CBU</button>
+                
             </div>
         </div>
-
+        <router-link class="linkDatos" to="/"><img src="../assets/expand_more_FILL0_wght400_GRAD0_opsz48.svg"/></router-link>
     </main>
 </template>
 
@@ -94,5 +95,11 @@ main{
     font-weight: 600;
     margin: 0;
     margin-bottom: 1rem;
+}
+.linkDatos img{
+    transform: rotateZ(180deg);
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
 }
 </style>
