@@ -37,7 +37,7 @@ export default {
             copyText(text, container, () => alert('CBU copiado, Muchas Gracias'))
         }
         const ubicacion = (e) => {
-            window.open('https://maps.app.goo.gl/KKVe6ZSpfLvzWxhp6')
+            window.open('https://goo.gl/maps/KeTm1AJ3yZX54Zyk8')
         }
         return { test, ubicacion }
     },
