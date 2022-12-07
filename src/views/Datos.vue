@@ -2,12 +2,13 @@
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import { copyText } from 'vue3-clipboard'
-
+import CustomCardDatos from '../components/CustomCardDatos.vue'
 const date = new Date("2023-02-03 12:00")
 </script>
 
 <template>
     <main>
+        <CustomCardDatos msg="Vite + Vue">
         <div class="containerLogo">
             <div class="center-content">
                 <img class="fiesta" src="../assets/Meslogo_ubicacion.png" alt="logo Ubicacion">
@@ -20,12 +21,13 @@ const date = new Date("2023-02-03 12:00")
                 <p class="preMiel">Nuestro mayor regalo es tu presencia pero si deseas colaborar con nuestra</p>
                 <p class="miel">Luna de Miel</p>
                 <p class="preMiel">Pueden hacernos su presente en la siguiente cuenta: <br/> CBU:0000003100001989493977 <br/> Alias:Enzo-Magui</p>
-                <button class="botoncito" @click="test('0000003100001989493977')" v-clipboard:success="onCopy"
+                <button class="botoncito botoncitoCBU" @click="test('0000003100001989493977')" v-clipboard:success="onCopy"
                     v-clipboard:error="onError">COPIAR CBU</button>
                 
             </div>
         </div>
-        <router-link class="linkDatos" to="/"><img src="../assets/expand_more_FILL0_wght400_GRAD0_opsz48.svg"/></router-link>
+        
+    </CustomCardDatos>
     </main>
 </template>
 
@@ -37,7 +39,7 @@ export default {
             copyText(text, container, () => alert('CBU copiado, Muchas Gracias'))
         }
         const ubicacion = (e) => {
-            window.open('https://goo.gl/maps/KeTm1AJ3yZX54Zyk8')
+            window.open('https://maps.app.goo.gl/thFSeHNJNwCK8Jgt6')
         }
         return { test, ubicacion }
     },
@@ -78,6 +80,11 @@ main{
     text-decoration: none;
     color: white;
     border: none;
+}
+
+.botoncitoCBU {
+    position: relative;
+    z-index: 5;
 }
 
 .preMiel {
