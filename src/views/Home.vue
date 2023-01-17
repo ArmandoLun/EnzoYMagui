@@ -4,7 +4,7 @@
 import CustomCard from '../components/CustomCard.vue'
 import cuentaRegresiva from '../components/CuentaRegresiva.vue'
 
-const date = new Date("2023-02-03 12:00")
+const date = new Date("2023-02-03 21:00")
 </script>
 
 <template>
