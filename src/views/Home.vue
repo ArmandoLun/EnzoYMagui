@@ -4,7 +4,7 @@
 import CustomCard from '../components/CustomCard.vue'
 import cuentaRegresiva from '../components/CuentaRegresiva.vue'
 
-const date = new Date("2023-02-03 21:00")
+const date = new Date("2023-02-03 21:30")
 </script>
 
 <template>
@@ -12,7 +12,7 @@ const date = new Date("2023-02-03 21:00")
         <CustomCard msg="Vite + Vue">
             <p class="header">¡Nos Casamos!</p>
             <img class="enzoymagui" src="../assets/enzoymagui.png" alt="EnzoYMagui">
-            <p class="date">3 de febrero 2023</p>
+            <p class="date">3 de febrero 2023, 21:30 hs</p>
             <cuentaRegresiva :end-date="date" v-slot="{ day, hour, min, sec }">
                 <div class="clock">
                     <div >
